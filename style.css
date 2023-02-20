@@ -1,0 +1,51 @@
+*{margin: 0;box-sizing: border-box;padding: 0}
+
+.body{
+    background-color: rgb(7, 0, 1);
+}
+
+.tic{
+   position: relative;
+   text-align: center;
+   margin-top: 10rem;
+    
+}
+
+.container-fluid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr) ;
+    width: 240px;
+    margin: auto;
+}
+.block{
+    border: 2px solid rgb(63, 63, 63);
+    width: 80px;
+    height: 80px;
+}
+
+
+.TeamX{
+    margin-right: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    padding-right: 50px;
+}
+.TeamX h2{
+    text-align: center;
+    
+}
+
+.TeamY{
+   
+    font-weight: 700;
+    font-size: 20px;
+    padding-right: 50px;
+}
+.TeamY h2{
+    text-align: center;
+}
+
+#again{
+    border-radius: 10px;
+}
