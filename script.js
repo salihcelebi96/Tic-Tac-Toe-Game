@@ -8,6 +8,8 @@ let teamX = document.querySelector(".TeamxScore");
 let teamO = document.querySelector(".TeamOScore");
 let again= document.querySelector("#again");
 let options;
+let sıfırla = document.getElementById("sıfırla");
+
 
 startgame();
 function startgame(){
@@ -128,6 +130,13 @@ function restartgame(){
 
 }
 
+sıfırla.addEventListener("click",()=>{
+  blocks.forEach(block => block.textContent="");
+  gameOver=false;
+  blocks.forEach(block => block.style.pointerEvents ="auto");
+  teamX.textContent=0;
+  teamO.textContent=0;
+})
 
 
 
